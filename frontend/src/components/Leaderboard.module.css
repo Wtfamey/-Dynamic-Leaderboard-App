@@ -1,0 +1,150 @@
+.leaderboardCard {
+  position: relative;
+  margin: 2rem 0;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(255, 152, 0, 0.10), 0 1.5px 8px rgba(0,0,0,0.07);
+  padding: 2.5rem 1.5rem 2rem 1.5rem;
+  overflow: hidden;
+}
+.bgFestive {
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 180px;
+  background: linear-gradient(120deg, #ffe082 60%, #ffb300 100%);
+  z-index: 0;
+  border-radius: 24px 24px 60px 60px;
+  pointer-events: none;
+}
+.title {
+  position: relative;
+  z-index: 1;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #ff9800;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+}
+.podiumWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2.5rem;
+  margin-bottom: 2.2rem;
+  position: relative;
+  z-index: 1;
+}
+.podium1, .podium2, .podium3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fffde7;
+  border-radius: 18px 18px 12px 12px;
+  box-shadow: 0 2px 8px rgba(255, 193, 7, 0.10);
+  padding: 1.2rem 1.2rem 0.8rem 1.2rem;
+  min-width: 110px;
+  min-height: 170px;
+  position: relative;
+}
+.podium1 {
+  min-height: 200px;
+  border: 2.5px solid #ffb300;
+  z-index: 2;
+  transform: scale(1.12);
+}
+.podium2, .podium3 {
+  border: 2px solid #ffe082;
+  opacity: 0.95;
+}
+.avatarWrapper {
+  position: relative;
+  margin-bottom: 0.7rem;
+}
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 3px solid #ffb300;
+  background: #fff;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(255, 193, 7, 0.13);
+}
+.crown {
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: #ffb300;
+  filter: drop-shadow(0 2px 4px #ffb30044);
+}
+.podiumName {
+  font-weight: 700;
+  font-size: 1.08rem;
+  color: #ff9800;
+  margin-bottom: 0.2rem;
+  text-align: center;
+  word-break: break-word;
+}
+.podiumPoints {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffb300;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: 0.2rem;
+}
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 0.5rem;
+  font-size: 1.08rem;
+  margin-top: 0.5rem;
+}
+.row {
+  background: #fffde7;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(255, 193, 7, 0.07);
+}
+.rank {
+  font-weight: 700;
+  color: #ffb300;
+  text-align: center;
+  width: 2.5rem;
+}
+.rowAvatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #ffe082;
+  margin-right: 0.7rem;
+  object-fit: cover;
+  background: #fff;
+}
+.rowName {
+  font-weight: 600;
+  color: #333;
+  vertical-align: middle;
+}
+.rowPoints {
+  font-weight: 700;
+  color: #ffb300;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+@media (max-width: 700px) {
+  .podiumWrapper {
+    gap: 1.2rem;
+  }
+  .podium1, .podium2, .podium3 {
+    min-width: 80px;
+    min-height: 120px;
+    padding: 0.7rem 0.7rem 0.5rem 0.7rem;
+  }
+  .avatar {
+    width: 44px;
+    height: 44px;
+  }
+} 

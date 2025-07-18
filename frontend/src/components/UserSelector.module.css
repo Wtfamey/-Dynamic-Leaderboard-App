@@ -1,0 +1,50 @@
+.selectorWrapper {
+  background: #fffde7;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(255, 193, 7, 0.10);
+  padding: 1.2rem 1.5rem 1.2rem 1.5rem;
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.label {
+  font-weight: 700;
+  color: #ff9800;
+  margin-bottom: 0.25rem;
+  font-size: 1.08rem;
+}
+.select {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1.5px solid #ffb300;
+  font-size: 1rem;
+  background: #fff;
+  transition: border 0.2s;
+  font-weight: 600;
+  color: #333;
+}
+.select:focus {
+  border: 2px solid #ff9800;
+  outline: none;
+}
+.avatarPreview {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: 0.5rem;
+}
+.avatarImg {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #ffb300;
+  background: #fff;
+  object-fit: cover;
+  box-shadow: 0 1px 4px rgba(255, 193, 7, 0.13);
+}
+.selectedName {
+  font-weight: 600;
+  color: #ff9800;
+  font-size: 1.05rem;
+} 
